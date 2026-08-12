@@ -1,14 +1,14 @@
 # AEMB v0.2
 
-The benchmark publication is:
+The standalone AEMB v0.2 r0.5.1 article is *AEMB: Canonical Protocol-Graph
+End-to-End Conformance for Hybrid Financial Protocols*. Its canonical PDF is
+[available](../../papers/downloads/AEMB_v0.2_Cohort_Bound_Conformance_r0.5.1.pdf);
+arXiv and SSRN are forthcoming.
 
-Nechepurenko, Maksym, *AEMB: A Deterministic Cross-language Verification
-Benchmark for Event-margin Protocols* (July 22, 2026). Available at SSRN:
-[https://ssrn.com/abstract=7216198](https://ssrn.com/abstract=7216198) or
-[http://dx.doi.org/10.2139/ssrn.7216198](https://dx.doi.org/10.2139/ssrn.7216198).
-
-The author-provided short version is available in
-[../../papers/downloads/AEMB_Benchmark_15p.pdf](../../papers/downloads/AEMB_Benchmark_15p.pdf).
+The SSRN DOI [10.2139/ssrn.7216198](https://dx.doi.org/10.2139/ssrn.7216198)
+belongs to the earlier AEMB v0.1.0 article, not to the v0.2 article. Article
+publication and the AEMB v0.2 dataset/schema freeze are separate decisions;
+the dataset remains `HOLD` until a distinct frozen-package review.
 
 AEMB v0.2 uses the following publication-facing evaluation interface:
 

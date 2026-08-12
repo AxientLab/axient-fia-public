@@ -40,27 +40,26 @@ traces, or operational evidence store.
 
 ## Research programme
 
-### Available short versions
+All research papers below are by Maksym Nechepurenko. The list uses one title,
+publication-status, and PDF format throughout.
 
-| Work | Bibliographic record | Download |
+| Paper | Publication status | PDF |
 | --- | --- | --- |
-| *Axient: Debt-Free Finality for Leveraged Binary Event Markets* | [arXiv:2608.00631](https://arxiv.org/abs/2608.00631); DOI: [10.48550/arXiv.2608.00631](https://doi.org/10.48550/arXiv.2608.00631) | [PDF](papers/downloads/Axient_Debt_Free_Finality_r0.4.2_SHORT.pdf) |
-| *Axient: On-Chain Credit and Loss Allocation for Leveraged Event Markets: A Venue-Agnostic Protocol for Traders, Credit Providers, Market Makers, and Liquidation Backstops* | [arXiv:2608.00647](https://arxiv.org/abs/2608.00647); DOI: [10.48550/arXiv.2608.00647](https://doi.org/10.48550/arXiv.2608.00647) | [PDF](papers/downloads/Axient_On_Chain_Credit_and_Loss_Allocation_r0.4.1_SHORT.pdf) |
-| *Axient: Empirical Calibration of Venue-agnostic Event-margin Protocols: A Prospectively Frozen Analysis Plan, Deterministic Internal-alpha Technical Pilot, and Venue-emulator Methodology* | SSRN:7216083; DOI: [10.2139/ssrn.7216083](https://dx.doi.org/10.2139/ssrn.7216083) | [PDF](papers/downloads/Axient_Empirical_Calibration_r0.6.0_SHORT.pdf) |
-| Nechepurenko, Maksym, *AEMB: A Deterministic Cross-language Verification Benchmark for Event-margin Protocols* (July 22, 2026) | SSRN:7216198; DOI: [10.2139/ssrn.7216198](https://dx.doi.org/10.2139/ssrn.7216198) | [PDF](papers/downloads/AEMB_Benchmark_15p.pdf) |
-| Nechepurenko, Maksym, *AVET: A Provenance-aware Venue Emulator Trace Dataset for Event Markets* (July 27, 2026) | SSRN:7216180; DOI: [10.2139/ssrn.7216180](https://dx.doi.org/10.2139/ssrn.7216180) | [PDF](papers/downloads/AVET_Dataset_15p.pdf) |
+| *Axient: Debt-Free Finality for Leveraged Binary Event Markets* | r0.4.2; [arXiv:2608.00631](https://arxiv.org/abs/2608.00631); DOI: [10.48550/arXiv.2608.00631](https://doi.org/10.48550/arXiv.2608.00631) | [PDF](papers/downloads/Axient_Debt_Free_Finality_r0.4.2_SHORT.pdf) |
+| *Axient: On-Chain Credit and Loss Allocation for Leveraged Event Markets: A Venue-Agnostic Protocol for Traders, Credit Providers, Market Makers, and Liquidation Backstops* | r0.4.1; [arXiv:2608.00647](https://arxiv.org/abs/2608.00647); DOI: [10.48550/arXiv.2608.00647](https://doi.org/10.48550/arXiv.2608.00647) | [PDF](papers/downloads/Axient_On_Chain_Credit_and_Loss_Allocation_r0.4.1_SHORT.pdf) |
+| *Axient: Empirical Calibration of Venue-Agnostic Event-Margin Protocols: A Prospectively Frozen Analysis Plan, Deterministic Internal-Alpha Technical Pilot, and Venue-Emulator Methodology* | r0.6.0; [SSRN:7216083](https://ssrn.com/abstract=7216083); DOI: [10.2139/ssrn.7216083](https://doi.org/10.2139/ssrn.7216083) | [PDF](papers/downloads/Axient_Empirical_Calibration_r0.6.0_SHORT.pdf) |
+| *AEMB: A Deterministic Cross-Language Verification Benchmark for Event-Margin Protocols* | [SSRN:7216198](https://ssrn.com/abstract=7216198); DOI: [10.2139/ssrn.7216198](https://doi.org/10.2139/ssrn.7216198) | [PDF](papers/downloads/AEMB_Benchmark_15p.pdf) |
+| *AVET: A Provenance-Aware Venue Emulator Trace Dataset for Event Markets* | [SSRN:7216180](https://ssrn.com/abstract=7216180); DOI: [10.2139/ssrn.7216180](https://doi.org/10.2139/ssrn.7216180) | [PDF](papers/downloads/AVET_Dataset_15p.pdf) |
+| *Axient: Canonical Protocol-Graph Composition for Leveraged Event Markets* | r0.5.1; PDF available; arXiv: forthcoming; SSRN: forthcoming | [PDF](papers/downloads/Axient_Paper_IV_Canonical_Protocol_Graph_r0.5.1.pdf) |
+| *Axient: Manifest-Bound End-to-End Evidence for On-Chain Financial Protocols* | r0.5.1; PDF available; arXiv: forthcoming; SSRN: forthcoming | [PDF](papers/downloads/Axient_Paper_V_Manifest_Bound_E2E_Evidence_r0.5.1.pdf) |
+| *AEMB: Canonical Protocol-Graph End-to-End Conformance for Hybrid Financial Protocols* | r0.5.1; PDF available; arXiv: forthcoming; SSRN: forthcoming | [PDF](papers/downloads/AEMB_v0.2_Cohort_Bound_Conformance_r0.5.1.pdf) |
 
-The supplied PDF files are short versions. Their source PDFs and copied
-repository files have identical SHA-256 values, recorded in
-[SHA256SUMS](SHA256SUMS). See [papers/](papers/) for links and publication
-status.
+Each PDF is an unchanged author-provided copy. SHA-256 values are recorded in
+[SHA256SUMS](SHA256SUMS); see [papers/](papers/) for the publication map.
 
-### Forthcoming
-
-- *Axient: Canonical Protocol-Graph Composition for Leveraged Event Markets*
-- *Axient: Manifest-Bound End-to-End Evidence for On-Chain Financial Protocols*
-- Three additional manuscripts are in preparation; their metadata and
-  downloadable artefacts will be added after the author provides them.
+The AEMB v0.2 article is distinct from the earlier AEMB v0.1.0 article with
+SSRN DOI `10.2139/ssrn.7216198`. The v0.2 dataset/schema freeze remains
+`HOLD` pending a separate frozen-package review.
 
 ## Phase 17B result
 
@@ -100,7 +99,9 @@ assertion: the denominator is always 12, never 14.
 
 Each of the twelve parent assertions has seven **retained evidence layers with
 registered derivations**. The public registry records 84 positions and the
-parent/scenario identity for each one:
+parent/scenario identity for each one. The scope distinction between what the
+repository recomputes and what it attests from withheld runtime payload is in
+[VERIFICATION_SCOPE.md](VERIFICATION_SCOPE.md).
 
 - [all-12 cohort metadata](evidence/all12-manifest.json)
 - [scenario registry](evidence/scenario-registry.csv)
@@ -129,10 +130,12 @@ cd axient-fia-public
 node verifier/verify.mjs
 ```
 
-The verifier requires no network and no private repository. It checks the
-schemas and published registries; parent count, unique correlations, seven
-registered layer positions per FIA, FIA-11 subcase completeness; all canonical
-identities; P01–P17 order/cardinality; and [SHA256SUMS](SHA256SUMS).
+The verifier requires no network and no private repository. It recomputes
+integrity checks over published files: parent count, unique correlations, seven
+registered layer positions per FIA, FIA-11 subcase completeness,
+materialization/package/replay metadata, publication PDF checksums, and
+[SHA256SUMS](SHA256SUMS). Runtime-payload identities are explicitly attested,
+not reconstructed, as described in [VERIFICATION_SCOPE.md](VERIFICATION_SCOPE.md).
 
 ## Repository structure
 
@@ -160,8 +163,8 @@ with the exact manifest, root, archive, and replay identifiers used.
 
 ## Licence
 
-Code and documentation in this repository are released under the
-[MIT License](LICENSE).
+See the directory-level multi-licence [policy](LICENSE_POLICY.md). Axient
+names and marks are excluded from the grants; see [TRADEMARK.md](TRADEMARK.md).
 
 ## Security
 

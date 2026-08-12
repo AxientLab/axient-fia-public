@@ -1,0 +1,82 @@
+{
+  "schema": "axient/publication-site-metadata/v1",
+  "generated": "2026-08-12",
+  "articles": [
+    {
+      "id": "paper_iv",
+      "title": "Axient: Canonical Protocol-Graph Composition for Leveraged Event Markets: Single State Authority, Atomic Composition, Durable Sagas, and Exactly-Once Recovery",
+      "short_title": "Axient: Canonical Protocol-Graph Composition for Leveraged Event Markets",
+      "author": "Maksym Nechepurenko",
+      "version": "r0.5.1",
+      "date": "2026-08",
+      "abstract": "A modular leveraged event-market protocol can contain individually correct contracts for risk approval, positions, debt, settlement evidence, credit pools, junior backstops, reserves, liquidation, and governance while still lacking one authoritative financial execution path. This paper develops a canonical protocol graph in which every financial domain has one storage authority and composition components coordinate transitions without recreating balances, debt, positions, evidence receipts, queues, reserves, pause state, or terminal scenario state. The architecture formalizes atomic position origination, a settlement-confirmed debt saga, trader residual release, an ordered reserve--backstop--Senior loss waterfall, loss-participating withdrawal queues, capability-conditioned execution, protocol-wide pause and timelocked recovery, deterministic deployment manifests, canonical state projection, and exactly-once reconstruction after a chain-confirmed checkpoint. We prove composition-level authority uniqueness, atomic closure, loss conservation and priority, receipt-idempotent settlement, legal no-go safety, capability-transition safety, and no-financial-reexecution recovery under explicit assumptions. The implementation is evaluated through twelve parent Financial Interaction Assertions (FIA-001--FIA-012), including mandatory FIA-011A/B capability subcases. The accepted Phase 17B cohort contains twelve uniquely correlated scenario records and 84 retained ACTUAL_EVIDENCE layer positions, two clean materializations with one byte-identical file index, a deterministic strict archive accepted by a separate verifier, and a selected P01--P17 replay whose P17 output is content-bound to that archive. The result connects the formal protocol graph to a reproducible evidence chain while preserving explicit boundaries between the observed engineering result and future external-operation hypotheses.",
+      "pdf_filename": "Axient_Paper_IV_Canonical_Protocol_Graph_r0.5.1.pdf",
+      "pdf_sha256": "decd57c574aafbc9976739193b984c36ba0c65dd4a86c6ccdfbd65305cd1f0a3",
+      "evidence_repository": "https://github.com/AxientLab/axient-fia-public",
+      "evidence_commit": "7722146bee0e7f02d0c4f9f63ada6d527e6ff079",
+      "arxiv": {
+        "status": "forthcoming",
+        "id": null,
+        "url": null
+      },
+      "ssrn": {
+        "status": "forthcoming",
+        "abstract_id": null,
+        "doi": null,
+        "url": null
+      },
+      "publication_state": "focused_rereview"
+    },
+    {
+      "id": "paper_v",
+      "title": "Axient: Manifest-Bound End-to-End Evidence for On-Chain Financial Protocols: Seven-Layer Derivation, Correlation, Tamper Rejection, and Reproducible Claim Promotion",
+      "short_title": "Axient: Manifest-Bound End-to-End Evidence for On-Chain Financial Protocols",
+      "author": "Maksym Nechepurenko",
+      "version": "r0.5.1",
+      "date": "2026-08",
+      "abstract": "Hybrid on-chain financial protocols are frequently evaluated with evidence that is individually useful but collectively insufficient: a unit test, transaction receipt, screenshot, service response, or several matching hashes may be presented as proof of a complete workflow even when the layers share one generated source or omit the financial authority that matters. This paper develops a manifest-bound evidence architecture for such systems. A sealed execution manifest binds the contract graph, roles, selectors, adapters, schemas, and release identity. Seven evidence layers are retained with registered derivations and linked by a common correlation identity. A conjunctive claim-promotion rule requires provenance, predicate-specific root conditions, negative controls, reproducible packaging, historical replay, and independent review in addition to hash equality. We formalize the evidence graph, prove that copied hashes cannot establish independent derivation, show how collision-resistant commitments make specified tampering detectable, define exactly-once financial-effect evidence, and distinguish original historical identities from later reproducibility attestations. The Phase 17B case study records twelve parent Financial Interaction Assertions in one accepted cohort: 84 retained ACTUAL_EVIDENCE positions, two clean materializations with one byte-identical file index, a deterministic strict archive accepted by a separate verifier, and a selected P01--P17 replay whose P17 output is content-bound to that archive. FIA-011 is conjunctive and retains both stale-before-admission and book-epoch-change-mid-position subcases. The result demonstrates a reviewable chain of custody from financial assertion to replay-bound package while preserving the difference between observed evidence, interpretation, and future hypotheses.",
+      "pdf_filename": "Axient_Paper_V_Manifest_Bound_E2E_Evidence_r0.5.1.pdf",
+      "pdf_sha256": "210ab1d22090a5a2a1dc627d4eabc28a8dba37fb59a243eec3a628222f1df727",
+      "evidence_repository": "https://github.com/AxientLab/axient-fia-public",
+      "evidence_commit": "7722146bee0e7f02d0c4f9f63ada6d527e6ff079",
+      "arxiv": {
+        "status": "forthcoming",
+        "id": null,
+        "url": null
+      },
+      "ssrn": {
+        "status": "forthcoming",
+        "abstract_id": null,
+        "doi": null,
+        "url": null
+      },
+      "publication_state": "focused_rereview"
+    },
+    {
+      "id": "aemb_v02",
+      "title": "AEMB: Canonical Protocol-Graph End-to-End Conformance for Hybrid Financial Protocols: Twelve Parent FIA Cases, Additive Venue and Legal Controls, and Registered Evidence Derivations",
+      "short_title": "AEMB: Canonical Protocol-Graph End-to-End Conformance for Hybrid Financial Protocols",
+      "author": "Maksym Nechepurenko",
+      "version": "r0.5.1",
+      "date": "2026-08",
+      "abstract": "AEMB v0.1.0 provides 38 deterministic scenarios for event-margin accounting, venue-adapter boundaries, and operational faults. This standalone paper specifies AEMB v0.2, an additive conformance extension built around twelve parent Financial Interaction Assertions (FIA-001--FIA-012), five prospective venue/legal cases outside that denominator, and proposed negative-control families. The abstract case body is manifest-independent; deployment manifest and evidence-policy version are bound at the case-manifest layer, while source provenance is registered separately. Seven retained evidence layers carry explicit derivation topology rather than a blanket claim of independence. Promotion predicates are typed as positive, terminal-closure, absence-negative-control, recomputed-comparison, or proposed multi-root-corroboration gates. FIA-011 contains two mandatory subcases: stale capability before admission and book-epoch change after position opening while debt remains positive. The reference Phase 17B corpus contains one all-12 cohort with 84 retained ACTUAL_EVIDENCE positions, two clean materializations sharing one byte-identical file index, a deterministic strict archive accepted by a separate verifier, and a selected P01--P17 replay whose P17 output is content-bound to that archive. AEMB v0.2 therefore extends deterministic terminal-state testing into cohort, derivation, packaging, and replay conformance. The article is evidence-integrated; the additive public dataset release remains a separate versioned artifact requiring schema/package freeze and independent package review.",
+      "pdf_filename": "AEMB_v0.2_Cohort_Bound_Conformance_r0.5.1.pdf",
+      "pdf_sha256": "211900844f1af301ec23b14bc95aad9f10385abb4030b9b400919a7b5de92aaa",
+      "evidence_repository": "https://github.com/AxientLab/axient-fia-public",
+      "evidence_commit": "7722146bee0e7f02d0c4f9f63ada6d527e6ff079",
+      "arxiv": {
+        "status": "forthcoming",
+        "id": null,
+        "url": null
+      },
+      "ssrn": {
+        "status": "forthcoming",
+        "abstract_id": null,
+        "doi": null,
+        "url": null
+      },
+      "publication_state": "focused_rereview"
+    }
+  ],
+  "activation_policy": "PDF/arXiv/SSRN links become public only on owner-approved publication action; IDs must never be invented."
+}
