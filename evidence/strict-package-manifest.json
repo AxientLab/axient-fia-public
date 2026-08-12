@@ -1,0 +1,20 @@
+{
+  "schema": "axient-fia-public/strict-package-manifest/v1",
+  "source_run_id": "phase17b-run-4c40d373b9c4ead91ecfdcab5539941743733b06",
+  "source_manifest_sha256": "342b2a6f27aeb91bba2013f5604ab1c50aaba48d6f218c3f3f84cc5c39ce7bfd",
+  "ledger_root_sha256": "09cd709444eb82a0c2c17d4b42a2750b2cd9b6002f69b6a3648c4e2ea1b41e46",
+  "canonical_root_sha256": "f0af6a55fc624131bfd86e3ef42003e5bb3e5beb958bfde914a6e7fe82c3a1bf",
+  "archive_sha256": "6901e3277c49693c867f1d960166acfb5dddb76eaf134b4bf66fba26e54cf328",
+  "archive_byte_length": 88569,
+  "archive_member_count": 16,
+  "verification": {
+    "method": "separate fixed-metadata archive verifier",
+    "status": "accepted"
+  },
+  "claims": {
+    "publication_scope": "reproducibility metadata and registered derivations",
+    "external_production_outcome": "not asserted",
+    "terminal_settlement": "not asserted"
+  }
+}
+

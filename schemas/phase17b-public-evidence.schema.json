@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/AxientLab/axient-fia-public/schemas/phase17b-public-evidence.schema.json",
+  "title": "Axient FIA public Phase 17B evidence summary",
+  "type": "object",
+  "required": [
+    "schema",
+    "all12_run_id",
+    "all12_manifest_sha256",
+    "ledger_root_sha256",
+    "parent_fia_count",
+    "retained_evidence_layer_positions",
+    "layers_per_parent_fia",
+    "strict_archive_sha256",
+    "p01_p17_coordinator_result_sha256",
+    "p17_final_output_sha256",
+    "claims"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string"
+    },
+    "all12_run_id": {
+      "type": "string"
+    },
+    "all12_manifest_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "ledger_root_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "parent_fia_count": {
+      "const": 12
+    },
+    "retained_evidence_layer_positions": {
+      "const": 84
+    },
+    "layers_per_parent_fia": {
+      "const": 7
+    },
+    "strict_archive_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "p01_p17_coordinator_result_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "p17_final_output_sha256": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "claims": {
+      "type": "object"
+    }
+  }
+}
+

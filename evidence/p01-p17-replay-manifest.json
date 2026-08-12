@@ -1,0 +1,110 @@
+{
+  "schema": "axient-fia-public/p01-p17-replay-manifest/v1",
+  "replay_run_id": "p01-p17-v3-full-context-20260812",
+  "phase_count": 17,
+  "replay_completed": true,
+  "coordinator_result_sha256": "2e51296ab1d50558342a9e740f94ddf3e5e7d221c1b329466577a7918bb0767f",
+  "p17_final_output_sha256": "111a9c6c2848d6605081f4fcf08dfd859a51423e1478a50d2c252c49fa6cda1b",
+  "strict_archive_binding_sha256": "7363650e5e9dd972b00d19acb2462046e259f85a1e4df6735b8523103babba64",
+  "strict_archive_sha256": "6901e3277c49693c867f1d960166acfb5dddb76eaf134b4bf66fba26e54cf328",
+  "phases": [
+    {
+      "position": 1,
+      "phase": "P01",
+      "result_sha256": "e7a2c64c3e5771babe170c51077db7fecfa13d495f8de6364600587d5821afca"
+    },
+    {
+      "position": 2,
+      "phase": "P02",
+      "result_sha256": "f971079ff93ecaec406da575b40e2638417b30e1a6fd8820211eecf5d659ace7"
+    },
+    {
+      "position": 3,
+      "phase": "P03",
+      "result_sha256": "121eb28351c08c9ce6560dedbe431b9d1e7ed0bb5b90e50edf1898d974a64a71"
+    },
+    {
+      "position": 4,
+      "phase": "P04",
+      "result_sha256": "fa48bec83a9ef13f7db7c1de06f7586d02bcdf40f366391d4e8171ff21cfd010"
+    },
+    {
+      "position": 5,
+      "phase": "P05",
+      "result_sha256": "757bc08e2f094bff06f7437c010424551cebccc490076898b14d7061bb80ecbc",
+      "selected_variant": "v3"
+    },
+    {
+      "position": 6,
+      "phase": "P06",
+      "result_sha256": "2796ed2f2094e6de517de630abb47b2a6c2be8114093a508dbcd852c2948e5cb"
+    },
+    {
+      "position": 7,
+      "phase": "P07",
+      "result_sha256": "46b7ab4318be95f0c0afd3a4fed25b65ec0737a21ffbf62b7bf85ea7dbbb9c43",
+      "selected_variant": "v3"
+    },
+    {
+      "position": 8,
+      "phase": "P08",
+      "result_sha256": "88a1456c35a5221f7912b5b9a016efdc3536c6f01276c9d4b5e8f441b9830c8f",
+      "selected_variant": "dependency-remediation"
+    },
+    {
+      "position": 9,
+      "phase": "P09",
+      "result_sha256": "f7ac62d6a5547a2ecf97863b5614a04839a8c2d8e241afb364c76108047a3c9b",
+      "selected_variant": "executed-alpha"
+    },
+    {
+      "position": 10,
+      "phase": "P10",
+      "result_sha256": "2e6da4d9ee3eaae61bae1c911611afdc0959d84022ca3c597e214976660e08d2"
+    },
+    {
+      "position": 11,
+      "phase": "P11",
+      "result_sha256": "1b23e5bfb8d7e7ecaa61e04255dcc4b5a13898867ea38225e7c3e3825010af76"
+    },
+    {
+      "position": 12,
+      "phase": "P12",
+      "result_sha256": "ee10ec3f3a82ede1b0844764f514fc2d209adcdb118b9376377c0c0a3f312dbb",
+      "selected_variant": "dependency-remediation"
+    },
+    {
+      "position": 13,
+      "phase": "P13",
+      "result_sha256": "140a79d8c408fcfe8ca20e0b6a7ba26bb0cffe8e1d09e46bf108a48185dd9890"
+    },
+    {
+      "position": 14,
+      "phase": "P14",
+      "result_sha256": "09755993df6e3acfd2d73caa26f39ae6f4ec56f0796489e26dea29997fd50e20"
+    },
+    {
+      "position": 15,
+      "phase": "P15",
+      "result_sha256": "227428a31a616a9d62f13d1bdc81709c9b55699bd2433e65e484c596c73a9e8d",
+      "selected_variant": "v2"
+    },
+    {
+      "position": 16,
+      "phase": "P16",
+      "result_sha256": "376aceadc38ceeb1c924e297ccc7c08761aa0f36708c5167bead78bdd80cbecd",
+      "selected_variant": "v2"
+    },
+    {
+      "position": 17,
+      "phase": "P17",
+      "result_sha256": "111a9c6c2848d6605081f4fcf08dfd859a51423e1478a50d2c252c49fa6cda1b"
+    }
+  ],
+  "claims": {
+    "publication_scope": "reproducibility metadata and registered derivations",
+    "external_production_outcome": "not asserted",
+    "terminal_settlement": "not asserted"
+  }
+}
+

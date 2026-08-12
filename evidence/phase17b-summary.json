@@ -1,0 +1,25 @@
+{
+  "schema": "axient-fia-public/phase17b-summary/v1",
+  "canonical_source": "AxientLab/axient-fia",
+  "all12_run_id": "phase17b-run-4c40d373b9c4ead91ecfdcab5539941743733b06",
+  "source_workspace_commit": "bd6b2d54ec6e897b49756399637aaa49647b8ce1",
+  "all12_manifest_sha256": "342b2a6f27aeb91bba2013f5604ab1c50aaba48d6f218c3f3f84cc5c39ce7bfd",
+  "ledger_root_sha256": "09cd709444eb82a0c2c17d4b42a2750b2cd9b6002f69b6a3648c4e2ea1b41e46",
+  "parent_fia_count": 12,
+  "retained_evidence_layer_positions": 84,
+  "layers_per_parent_fia": 7,
+  "layer_description": "seven retained evidence layers with registered derivations",
+  "materializations": {
+    "count": 2,
+    "byte_identical": true
+  },
+  "strict_archive_sha256": "6901e3277c49693c867f1d960166acfb5dddb76eaf134b4bf66fba26e54cf328",
+  "p01_p17_coordinator_result_sha256": "2e51296ab1d50558342a9e740f94ddf3e5e7d221c1b329466577a7918bb0767f",
+  "p17_final_output_sha256": "111a9c6c2848d6605081f4fcf08dfd859a51423e1478a50d2c252c49fa6cda1b",
+  "claims": {
+    "publication_scope": "reproducibility metadata and registered derivations",
+    "external_production_outcome": "not asserted",
+    "terminal_settlement": "not asserted"
+  }
+}
+

@@ -1,0 +1,26 @@
+{
+  "schema": "axient-fia-public/materialization-manifest/v1",
+  "source_manifest_sha256": "342b2a6f27aeb91bba2013f5604ab1c50aaba48d6f218c3f3f84cc5c39ce7bfd",
+  "trees": [
+    {
+      "id": "clean-all12-a",
+      "manifest_sha256": "8d0fc26b6d93cd1e15586b3b383b06c3f2ccafac92cf82ec4a586453b626b079"
+    },
+    {
+      "id": "clean-all12-b",
+      "manifest_sha256": "b69d607345aaacf09c9c999ae11be533ea45a63301e4f548c9c8b54289065dfd"
+    }
+  ],
+  "independent_source_reads": true,
+  "actual_tree_files": 16,
+  "actual_tree_bytes": 122636,
+  "file_index_sha256": "5f1f78f1e6c9b002db15c53fe902195bb425f02b569c3e3efcf3c29f7f5661fc",
+  "byte_identical": true,
+  "comparison_sha256": "53ebd95f7deec40326d0f14821dd2f1829372b6ebb5ea6b6932fd098b3447187",
+  "claims": {
+    "publication_scope": "reproducibility metadata and registered derivations",
+    "external_production_outcome": "not asserted",
+    "terminal_settlement": "not asserted"
+  }
+}
+

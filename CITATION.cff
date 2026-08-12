@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this evidence companion, please cite it using the metadata below."
+title: "Axient FIA: Reproducibility and Evidence Companion"
+version: "0.1.0"
+date-released: 2026-08-12
+url: "https://github.com/AxientLab/axient-fia-public"
+license: "MIT"
+authors:
+  - name: "AxientLab"
+abstract: "Public reproducibility companion for the Axient Phase 17B evidence chain, Financial Interaction Assertions, and AEMB research programme."
+keywords:
+  - "event markets"
+  - "financial protocols"
+  - "provenance"
+  - "reproducibility"
+  - "verification"
