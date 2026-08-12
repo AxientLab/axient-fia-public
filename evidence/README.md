@@ -16,4 +16,3 @@ artefacts.
 The registry term is "seven retained evidence layers with registered
 derivations". It does not assert a separate independence property for each
 layer.
-
