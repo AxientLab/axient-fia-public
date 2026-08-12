@@ -40,17 +40,27 @@ traces, or operational evidence store.
 
 ## Research programme
 
-| Work | Identifier / status |
-| --- | --- |
-| *Axient: Debt-Free Finality for Leveraged Binary Event Markets* | arXiv:2608.00631; DOI: [10.48550/arXiv.2608.00631](https://doi.org/10.48550/arXiv.2608.00631) |
-| *Axient: On-Chain Credit and Loss Allocation for Leveraged Event Markets* | arXiv:2608.00647; DOI: [10.48550/arXiv.2608.00647](https://doi.org/10.48550/arXiv.2608.00647) |
-| *Axient: Empirical Calibration of Venue-Agnostic Event-Margin Protocols* | SSRN:7216083; DOI: [10.2139/ssrn.7216083](https://doi.org/10.2139/ssrn.7216083) |
-| *Axient: Canonical Protocol-Graph Composition for Leveraged Event Markets* | forthcoming |
-| *Axient: Manifest-Bound End-to-End Evidence for On-Chain Financial Protocols* | forthcoming |
-| AEMB v0.2 benchmark paper | forthcoming |
+### Available short versions
 
-Publication identifiers for the forthcoming works will be added in a
-metadata-only commit after publication. See [papers/](papers/).
+| Work | Bibliographic record | Download |
+| --- | --- | --- |
+| *Axient: Debt-Free Finality for Leveraged Binary Event Markets* | [arXiv:2608.00631](https://arxiv.org/abs/2608.00631); DOI: [10.48550/arXiv.2608.00631](https://doi.org/10.48550/arXiv.2608.00631) | [PDF](papers/downloads/Axient_Debt_Free_Finality_r0.4.2_SHORT.pdf) |
+| *Axient: On-Chain Credit and Loss Allocation for Leveraged Event Markets: A Venue-Agnostic Protocol for Traders, Credit Providers, Market Makers, and Liquidation Backstops* | [arXiv:2608.00647](https://arxiv.org/abs/2608.00647); DOI: [10.48550/arXiv.2608.00647](https://doi.org/10.48550/arXiv.2608.00647) | [PDF](papers/downloads/Axient_On_Chain_Credit_and_Loss_Allocation_r0.4.1_SHORT.pdf) |
+| *Axient: Empirical Calibration of Venue-agnostic Event-margin Protocols: A Prospectively Frozen Analysis Plan, Deterministic Internal-alpha Technical Pilot, and Venue-emulator Methodology* | SSRN:7216083; DOI: [10.2139/ssrn.7216083](https://dx.doi.org/10.2139/ssrn.7216083) | [PDF](papers/downloads/Axient_Empirical_Calibration_r0.6.0_SHORT.pdf) |
+| Nechepurenko, Maksym, *AEMB: A Deterministic Cross-language Verification Benchmark for Event-margin Protocols* (July 22, 2026) | SSRN:7216198; DOI: [10.2139/ssrn.7216198](https://dx.doi.org/10.2139/ssrn.7216198) | [PDF](papers/downloads/AEMB_Benchmark_15p.pdf) |
+| Nechepurenko, Maksym, *AVET: A Provenance-aware Venue Emulator Trace Dataset for Event Markets* (July 27, 2026) | SSRN:7216180; DOI: [10.2139/ssrn.7216180](https://dx.doi.org/10.2139/ssrn.7216180) | [PDF](papers/downloads/AVET_Dataset_15p.pdf) |
+
+The supplied PDF files are short versions. Their source PDFs and copied
+repository files have identical SHA-256 values, recorded in
+[SHA256SUMS](SHA256SUMS). See [papers/](papers/) for links and publication
+status.
+
+### Forthcoming
+
+- *Axient: Canonical Protocol-Graph Composition for Leveraged Event Markets*
+- *Axient: Manifest-Bound End-to-End Evidence for On-Chain Financial Protocols*
+- Three additional manuscripts are in preparation; their metadata and
+  downloadable artefacts will be added after the author provides them.
 
 ## Phase 17B result
 
@@ -106,9 +116,10 @@ the explanatory index is [provenance/P01-P17.md](provenance/P01-P17.md).
 
 ## AEMB
 
-[AEMB v0.2](benchmark/aemb-v0.2/) is a standalone forthcoming benchmark. This
-repository publishes its Phase 17B-facing definitions and reproducibility
-interface, not unpublished benchmark outcomes.
+[AEMB v0.2](benchmark/aemb-v0.2/) is documented as a standalone benchmark
+publication, with its supplied short version available for download in
+[papers/downloads/](papers/downloads/). The Phase 17B materials publish the
+benchmark-facing definitions and reproducibility interface.
 
 ## Reproduce / verify
 

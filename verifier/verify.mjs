@@ -17,6 +17,13 @@ const expected = {
   coordinator: '2e51296ab1d50558342a9e740f94ddf3e5e7d221c1b329466577a7918bb0767f',
   p17: '111a9c6c2848d6605081f4fcf08dfd859a51423e1478a50d2c252c49fa6cda1b'
 };
+const expectedDownloads = {
+  'papers/downloads/AEMB_Benchmark_15p.pdf': '1a2ce3fd2d535af389c8bfced4342072be3d9e303621ace3e967f060acdf817d',
+  'papers/downloads/AVET_Dataset_15p.pdf': '615b30aea58f26b7175c75e9a415b3b96af3c0425357f2aadbaf801e06f920a9',
+  'papers/downloads/Axient_Debt_Free_Finality_r0.4.2_SHORT.pdf': '3f9f3ad33a31491498896fbb61c30a6b95584e77b5c0bfafa911248a33d922ff',
+  'papers/downloads/Axient_Empirical_Calibration_r0.6.0_SHORT.pdf': '29b8203457f0d2b9239afd5c31ac7d6e9f39a8691679532aa063388622fb462c',
+  'papers/downloads/Axient_On_Chain_Credit_and_Loss_Allocation_r0.4.1_SHORT.pdf': 'ff0330ff2942bc6a616a107a8aa67e0f86bc548aa7e6f81023ac2f3688999618'
+};
 
 const parseCsv = async (path) => {
   const lines = (await readFile(resolve(root, path), 'utf8')).trim().split('\n');
@@ -72,6 +79,12 @@ expect(replay.coordinator_result_sha256 === expected.coordinator && replay.p17_f
 for (let index = 0; index < 17; index += 1) expect(replay.phases[index].phase === 'P' + String(index + 1).padStart(2, '0'), 'replay phase order mismatch');
 expect(replay.phases[16].result_sha256 === expected.p17, 'P17 chain mismatch');
 
+for (const [relative, expectedHash] of Object.entries(expectedDownloads)) {
+  const bytes = await readFile(resolve(root, relative));
+  expect(bytes.subarray(0, 5).toString('ascii') === '%PDF-', 'invalid PDF header: ' + relative);
+  expect(sha256(bytes) === expectedHash, 'download checksum mismatch: ' + relative);
+}
+
 const sums = (await readFile(resolve(root, 'SHA256SUMS'), 'utf8')).trim().split('\n').filter(Boolean);
 expect(sums.length > 0, 'SHA256SUMS is empty');
 for (const line of sums) {
@@ -83,4 +96,4 @@ for (const line of sums) {
   expect(observed === expectedHash, 'checksum mismatch: ' + relative);
 }
 
-console.log('axient-fia-public: verified 12 parent FIA, 84 registered layer positions, 2 materializations, strict archive, and P01–P17 replay');
+console.log('axient-fia-public: verified 12 parent FIA, 84 registered layer positions, 2 materializations, strict archive, P01–P17 replay, and 5 short-paper downloads');

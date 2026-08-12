@@ -6,7 +6,8 @@ date-released: 2026-08-12
 url: "https://github.com/AxientLab/axient-fia-public"
 license: "MIT"
 authors:
-  - name: "AxientLab"
+  - family-names: "Nechepurenko"
+    given-names: "Maksym"
 abstract: "Public reproducibility companion for the Axient Phase 17B evidence chain, Financial Interaction Assertions, and AEMB research programme."
 keywords:
   - "event markets"
