@@ -1,0 +1,23 @@
+{
+  "scope_version": "1.0.0",
+  "recomputed_from_public_repository": [
+    "published_file_sha256",
+    "publication_pdf_sha256",
+    "parent_fia_and_layer_registry_structure",
+    "fia_011a_011b_completeness",
+    "materialization_and_strict_package_metadata",
+    "p01_p17_order_and_cardinality"
+  ],
+  "attested_from_withheld_runtime_payload": [
+    "manifest_identity",
+    "ledger_root_identity",
+    "strict_archive_identity",
+    "coordinator_result_identity",
+    "p17_output_identity",
+    "runtime_execution_and_raw_traces"
+  ],
+  "not_proven": [
+    "external_production_end_to_end_outcome",
+    "terminal_settlement"
+  ]
+}

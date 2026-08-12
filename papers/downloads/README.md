@@ -1,6 +1,6 @@
 # Short-version downloads
 
-The files in this directory are unchanged copies of five author-provided
+The files in this directory are unchanged copies of eight author-provided
 short PDFs. Their SHA-256 values are covered by the root
 [SHA256SUMS](../../SHA256SUMS) manifest.
 
@@ -11,3 +11,6 @@ short PDFs. Their SHA-256 values are covered by the root
 | [Axient Empirical Calibration](Axient_Empirical_Calibration_r0.6.0_SHORT.pdf) | 17 | `29b8203457f0d2b9239afd5c31ac7d6e9f39a8691679532aa063388622fb462c` |
 | [AEMB benchmark](AEMB_Benchmark_15p.pdf) | 15 | `1a2ce3fd2d535af389c8bfced4342072be3d9e303621ace3e967f060acdf817d` |
 | [AVET dataset](AVET_Dataset_15p.pdf) | 15 | `615b30aea58f26b7175c75e9a415b3b96af3c0425357f2aadbaf801e06f920a9` |
+| [Paper IV — Canonical Protocol-Graph Composition](Axient_Paper_IV_Canonical_Protocol_Graph_r0.5.1.pdf) | 22 | `decd57c574aafbc9976739193b984c36ba0c65dd4a86c6ccdfbd65305cd1f0a3` |
+| [Paper V — Manifest-Bound End-to-End Evidence](Axient_Paper_V_Manifest_Bound_E2E_Evidence_r0.5.1.pdf) | 19 | `210ab1d22090a5a2a1dc627d4eabc28a8dba37fb59a243eec3a628222f1df727` |
+| [AEMB v0.2 — Cohort-Bound Conformance](AEMB_v0.2_Cohort_Bound_Conformance_r0.5.1.pdf) | 20 | `211900844f1af301ec23b14bc95aad9f10385abb4030b9b400919a7b5de92aaa` |

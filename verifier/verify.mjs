@@ -19,11 +19,15 @@ const expected = {
 };
 const expectedDownloads = {
   'papers/downloads/AEMB_Benchmark_15p.pdf': '1a2ce3fd2d535af389c8bfced4342072be3d9e303621ace3e967f060acdf817d',
+  'papers/downloads/AEMB_v0.2_Cohort_Bound_Conformance_r0.5.1.pdf': '211900844f1af301ec23b14bc95aad9f10385abb4030b9b400919a7b5de92aaa',
   'papers/downloads/AVET_Dataset_15p.pdf': '615b30aea58f26b7175c75e9a415b3b96af3c0425357f2aadbaf801e06f920a9',
   'papers/downloads/Axient_Debt_Free_Finality_r0.4.2_SHORT.pdf': '3f9f3ad33a31491498896fbb61c30a6b95584e77b5c0bfafa911248a33d922ff',
   'papers/downloads/Axient_Empirical_Calibration_r0.6.0_SHORT.pdf': '29b8203457f0d2b9239afd5c31ac7d6e9f39a8691679532aa063388622fb462c',
+  'papers/downloads/Axient_Paper_IV_Canonical_Protocol_Graph_r0.5.1.pdf': 'decd57c574aafbc9976739193b984c36ba0c65dd4a86c6ccdfbd65305cd1f0a3',
+  'papers/downloads/Axient_Paper_V_Manifest_Bound_E2E_Evidence_r0.5.1.pdf': '210ab1d22090a5a2a1dc627d4eabc28a8dba37fb59a243eec3a628222f1df727',
   'papers/downloads/Axient_On_Chain_Credit_and_Loss_Allocation_r0.4.1_SHORT.pdf': 'ff0330ff2942bc6a616a107a8aa67e0f86bc548aa7e6f81023ac2f3688999618'
 };
+const expectedPublicationMetadataHash = '17d4638e52f1bcc26c1ad3e09b7b1866df859f8dbda039b7100de8cce77e0f2b';
 
 const parseCsv = async (path) => {
   const lines = (await readFile(resolve(root, path), 'utf8')).trim().split('\n');
@@ -37,8 +41,14 @@ const cohort = await readJson('evidence/all12-manifest.json');
 const materialization = await readJson('evidence/materialization-manifest.json');
 const strictPackage = await readJson('evidence/strict-package-manifest.json');
 const replay = await readJson('evidence/p01-p17-replay-manifest.json');
+const verificationScope = await readJson('VERIFICATION_SCOPE.json');
 const scenarios = await parseCsv('evidence/scenario-registry.csv');
 const layers = await parseCsv('evidence/evidence-layer-registry.csv');
+
+expect(Array.isArray(verificationScope.recomputed_from_public_repository), 'missing public recomputation scope');
+expect(Array.isArray(verificationScope.attested_from_withheld_runtime_payload), 'missing withheld-payload attestation scope');
+expect(verificationScope.recomputed_from_public_repository.includes('publication_pdf_sha256'), 'scope omits publication PDF checks');
+expect(verificationScope.attested_from_withheld_runtime_payload.includes('runtime_execution_and_raw_traces'), 'scope omits withheld runtime boundary');
 
 expect(Array.isArray(summarySchema.required), 'summary schema lacks required fields');
 for (const field of summarySchema.required) expect(Object.hasOwn(summary, field), 'summary is missing schema field: ' + field);
@@ -85,6 +95,9 @@ for (const [relative, expectedHash] of Object.entries(expectedDownloads)) {
   expect(sha256(bytes) === expectedHash, 'download checksum mismatch: ' + relative);
 }
 
+const publicationMetadata = await readFile(resolve(root, 'papers/metadata/PUBLICATION_SITE_METADATA.json'));
+expect(sha256(publicationMetadata) === expectedPublicationMetadataHash, 'publication-card metadata checksum mismatch');
+
 const sums = (await readFile(resolve(root, 'SHA256SUMS'), 'utf8')).trim().split('\n').filter(Boolean);
 expect(sums.length > 0, 'SHA256SUMS is empty');
 for (const line of sums) {
@@ -96,4 +109,4 @@ for (const line of sums) {
   expect(observed === expectedHash, 'checksum mismatch: ' + relative);
 }
 
-console.log('axient-fia-public: verified 12 parent FIA, 84 registered layer positions, 2 materializations, strict archive, P01–P17 replay, and 5 short-paper downloads');
+console.log('axient-fia-public: verified RECOMPUTED_FROM_PUBLIC_REPOSITORY: 12 parent FIA, 84 registered layer positions, FIA-011A/B, 2 materialization records, strict-package metadata, P01–P17 replay metadata, SHA256SUMS, and 8 short-paper downloads; payload-derived identities remain ATTESTED_FROM_WITHHELD_RUNTIME_PAYLOAD.');

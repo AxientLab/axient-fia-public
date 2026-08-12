@@ -55,12 +55,17 @@ repository files have identical SHA-256 values, recorded in
 [SHA256SUMS](SHA256SUMS). See [papers/](papers/) for links and publication
 status.
 
-### Forthcoming
+### r0.5.1 reviewed manuscripts
 
-- *Axient: Canonical Protocol-Graph Composition for Leveraged Event Markets*
-- *Axient: Manifest-Bound End-to-End Evidence for On-Chain Financial Protocols*
-- Three additional manuscripts are in preparation; their metadata and
-  downloadable artefacts will be added after the author provides them.
+| Work | Status | Download |
+| --- | --- | --- |
+| *Axient: Canonical Protocol-Graph Composition for Leveraged Event Markets* (Paper IV) | PDF available; arXiv: forthcoming; SSRN: forthcoming | [PDF](papers/downloads/Axient_Paper_IV_Canonical_Protocol_Graph_r0.5.1.pdf) |
+| *Axient: Manifest-Bound End-to-End Evidence for On-Chain Financial Protocols* (Paper V) | PDF available; arXiv: forthcoming; SSRN: forthcoming | [PDF](papers/downloads/Axient_Paper_V_Manifest_Bound_E2E_Evidence_r0.5.1.pdf) |
+| *AEMB: Canonical Protocol-Graph End-to-End Conformance for Hybrid Financial Protocols* (AEMB v0.2 article) | PDF available; arXiv: forthcoming; SSRN: forthcoming | [PDF](papers/downloads/AEMB_v0.2_Cohort_Bound_Conformance_r0.5.1.pdf) |
+
+The AEMB v0.2 article is distinct from the earlier AEMB v0.1.0 article with
+SSRN DOI `10.2139/ssrn.7216198`. The v0.2 dataset/schema freeze remains
+`HOLD` pending a separate frozen-package review.
 
 ## Phase 17B result
 
@@ -100,7 +105,9 @@ assertion: the denominator is always 12, never 14.
 
 Each of the twelve parent assertions has seven **retained evidence layers with
 registered derivations**. The public registry records 84 positions and the
-parent/scenario identity for each one:
+parent/scenario identity for each one. The scope distinction between what the
+repository recomputes and what it attests from withheld runtime payload is in
+[VERIFICATION_SCOPE.md](VERIFICATION_SCOPE.md).
 
 - [all-12 cohort metadata](evidence/all12-manifest.json)
 - [scenario registry](evidence/scenario-registry.csv)
@@ -129,10 +136,12 @@ cd axient-fia-public
 node verifier/verify.mjs
 ```
 
-The verifier requires no network and no private repository. It checks the
-schemas and published registries; parent count, unique correlations, seven
-registered layer positions per FIA, FIA-11 subcase completeness; all canonical
-identities; P01–P17 order/cardinality; and [SHA256SUMS](SHA256SUMS).
+The verifier requires no network and no private repository. It recomputes
+integrity checks over published files: parent count, unique correlations, seven
+registered layer positions per FIA, FIA-11 subcase completeness,
+materialization/package/replay metadata, publication PDF checksums, and
+[SHA256SUMS](SHA256SUMS). Runtime-payload identities are explicitly attested,
+not reconstructed, as described in [VERIFICATION_SCOPE.md](VERIFICATION_SCOPE.md).
 
 ## Repository structure
 
@@ -160,8 +169,8 @@ with the exact manifest, root, archive, and replay identifiers used.
 
 ## Licence
 
-Code and documentation in this repository are released under the
-[MIT License](LICENSE).
+See the directory-level multi-licence [policy](LICENSE_POLICY.md). Axient
+names and marks are excluded from the grants; see [TRADEMARK.md](TRADEMARK.md).
 
 ## Security
 

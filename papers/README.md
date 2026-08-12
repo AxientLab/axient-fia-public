@@ -7,7 +7,9 @@ author-provided short versions.
 
 - [Paper IV: canonical protocol-graph composition](paper-iv/)
 - [Paper V: manifest-bound evidence](paper-v/)
-- [AEMB benchmark paper](aemb-v0.2/)
+- [AEMB v0.2 article](aemb-v0.2/)
 - [AVET dataset paper](avet-v0.2/)
 - [Short-version downloads](downloads/)
-- [Three additional forthcoming manuscripts](forthcoming/)
+
+The new r0.5.1 PDFs are canonical supplied inputs. Their publication cards are
+copied byte-for-byte in [metadata/PUBLICATION_SITE_METADATA.json](metadata/PUBLICATION_SITE_METADATA.json).
