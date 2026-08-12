@@ -40,8 +40,6 @@ traces, or operational evidence store.
 
 ## Research programme
 
-All research papers below are by Maksym Nechepurenko. The list uses one title,
-publication-status, and PDF format throughout.
 
 | Paper | Publication status | PDF |
 | --- | --- | --- |
