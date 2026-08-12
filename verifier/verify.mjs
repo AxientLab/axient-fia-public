@@ -109,4 +109,4 @@ for (const line of sums) {
   expect(observed === expectedHash, 'checksum mismatch: ' + relative);
 }
 
-console.log('axient-fia-public: verified RECOMPUTED_FROM_PUBLIC_REPOSITORY: 12 parent FIA, 84 registered layer positions, FIA-011A/B, 2 materialization records, strict-package metadata, P01–P17 replay metadata, SHA256SUMS, and 8 short-paper downloads; payload-derived identities remain ATTESTED_FROM_WITHHELD_RUNTIME_PAYLOAD.');
+console.log('axient-fia-public: verified RECOMPUTED_FROM_PUBLIC_REPOSITORY: 12 parent FIA, 84 registered layer positions, FIA-011A/B, 2 materialization records, strict-package metadata, P01–P17 replay metadata, SHA256SUMS, and 8 publication PDFs; payload-derived identities remain ATTESTED_FROM_WITHHELD_RUNTIME_PAYLOAD.');

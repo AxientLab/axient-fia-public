@@ -1,7 +1,7 @@
-# Short-version downloads
+# Publication downloads
 
-The files in this directory are unchanged copies of eight author-provided
-short PDFs. Their SHA-256 values are covered by the root
+The files in this directory are unchanged copies of eight author-provided PDFs.
+Their SHA-256 values are covered by the root
 [SHA256SUMS](../../SHA256SUMS) manifest.
 
 | PDF | Pages | SHA-256 |
